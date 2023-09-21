@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200,{
             'Content-Type':'text/plain'
         })
-        res.end("Halo Dunia");
+        res.end(`Halo Dunia, port ${port}`);
     } else if (req.url === "/contact") {
         res.writeHead(200, {
             'Content-Type': 'text/plain'
